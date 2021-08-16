@@ -10,9 +10,7 @@ const ColoredUserpic = ({src, size, margin, backgroundColor, colors, hoverColors
                 onMouseEnter={() => setColor(colorOne)}
                 onMouseLeave={() => setColor(colorTwo)} 
                 className="icon">
-            <div style={{backgroundColor: backgroundColor}} 
-                
-                className="icon__outline">
+            <div style={{backgroundColor: backgroundColor}} className="icon__outline">
                 <img style={{margin: margin}} className="icon__img" src={src} alt={src} />
             </div>
         </div>
