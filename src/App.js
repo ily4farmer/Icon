@@ -1,11 +1,12 @@
 import React from 'react'
 import ColoredUserpic from './Components/ColoredUserpic/ColoredUserpic'
+import avatar from "./avatar.png"
 
 const App = () => {
   return (
     <div className="container">
       <ColoredUserpic  
-        src="./avatar.png"
+        src={avatar}
         size={150}
         margin={4}
         backgroundColor='red'

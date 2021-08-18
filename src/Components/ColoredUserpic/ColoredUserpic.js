@@ -4,7 +4,7 @@ import "./ColoredUserpic.sass"
 const ColoredUserpic = ({src, size, margin, backgroundColor, colors, hoverColors, colorWidth}) => {
     const colorOne = `linear-gradient(270deg, ${colors[0]} 20%, ${colors[1]}`,
           colorTwo = `linear-gradient(270deg, ${hoverColors[0]}, ${hoverColors[1]} 70%`,
-          [color, setColor] = useState(colorTwo)
+          [color, setColor] = useState(colorTwo);
     return (
         <div style={{ height:size, width:size, padding: colorWidth, background: color}} 
                 onMouseEnter={() => setColor(colorOne)}
